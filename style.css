@@ -1,1 +1,82 @@
-
+body {
+  margin: 0 auto;
+  
+}
+.heading h1{
+  font-size: 45px;
+/*   border: 1px solid black; */
+/*   text-align: center; */
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  margin-top: 30px;
+  color: #3896c5;
+}
+.heading .logo{
+  width: 165.36px;
+  padding: 2px;
+  height: auto;
+}
+.heading .logo1{
+  width: 165.36px;
+  padding: 2px;
+  height: auto;
+}
+@media only screen and (max-width: 976px) {
+  .heading .logo1 {
+    display: none;
+  }
+  .heading h1{
+  font-size: 40px;
+/*   border: 1px solid black; */
+/*   text-align: center; */
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  margin-top: 30px;
+  color: #3896c5;
+}
+.heading .logo{
+  width: 148.36px;
+  padding: 2px;
+  height: auto;
+}
+}
+@media only screen and (max-width: 600px) {
+  .heading .logo1 {
+    display: none;
+  }
+  .heading h1{
+  font-size: 32px;
+/*   border: 1px solid black; */
+/*   text-align: center; */
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  margin-top: 30px;
+  color: #3896c5;
+}
+.heading .logo{
+  width: 122.36px;
+  padding: 2px;
+  height: auto;
+}
+}
+@media only screen and (max-width: 500px) {
+  .heading .logo1 {
+    display: none;
+  }
+  .heading h1{
+  font-size: 5vw;
+/*   border: 1px solid black; */
+/*   text-align: center; */
+  font-family: 'Cinzel', serif;
+  font-weight: bolder;
+  margin-top: 20px;
+  color: #3896c5;
+}
+.heading .logo{
+  width: 20vw;
+  margin-top: 10px;
+  float: left;
+  padding: 2px;
+  height: auto;
+}
+}
