@@ -1,68 +1,75 @@
-
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.8">
-<meta http-equiv="X-UA-Compatibile"  content="ie=edge">
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
 
-<link rel="stylesheet"  href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link href="style.css" type="text/css"  rel="stylesheet">
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
-<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Cinzel|Nanum+Gothic&display=swap" rel="stylesheet"> 
-</head>
-<body>
-	<!--header-->
-	<div class="container heading">
-		<div class="row">
-			<div class="col-md-2 col-xs-3 col-sm-3"><!--LOGO-->
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/220px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png" class="logo" />
-			</div>
-			<div class="col-md-8 col-xs-9 col-sm-9"><!--NAME OF HEADING-->
-        <h1>IET-DAVV STUDENT
-          <br>ACM CHAPTER</h1>
-			</div>
-      <div class="col-md-2 col-xs-3 col-sm-3"><!--LOGO-->
-				<img src="https://pict.acm.org/Pulzion17/images/ACM%20logo.png" class="logo1" />
-			</div>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>acm website</title>
+	</head>
+	<body>
+		<div class="navbar-fixed">
+			<nav class="nav-wrapper #303f9f indigo darken-2">
+				<div class="container">
+					<ul class="left hide-on-med-and-down">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Login</a></li>  
+					</ul>
+					<a href="#" class="center brand-logo"><img class="smallsize" src="https://www.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta" /></a>
+					<a href="#" class="sidenav-trigger" data-target="mobile-links">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Login</a></li>  
+					</ul>
+				</div>
+			</nav>
 		</div>
-	</div>
-  <!--navbar-->
-  <!--side-navbars-for social-networking==4-->
-  <div class="container">
-	<div class="row">
-		<!--slider of image-->
-	<div class="col-md-8">
 		
-	</div>
-	    <!--Notification pannel-->
-	<div class="col-md-4">
+		<ul id="mobile-links" class="sidenav #bbdefb blue lighten-4">
+			<li>
+				<div class="user-view">
+					<div class="col s2">
+						<a href="#user"><img class="circle responsive-img" id="centerme" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/220px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png"></a>
+					</div>
+			</div>
+			</li>
+			<li><div class="divider"></div></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
 		
-	</div>
-    </div>
-    </div>
-    <!-- message from head and some extra coverage-->
-    <div class="container mid-body">
-    	
-    </div>
-  <!-- message from head and some extra coverage ENDING-->
-    <!--footer-->
-    <div class="container footer">
-    	
-    </div>
-  <!--footer ending-->
-</body>
-
+			<div class="main-body">
+			<div class="hero">
+				<h1>Get scrollin'</h1>
+				
+				<div class="down">
+					<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+				</div>
+			</div>
+			<div class="content">💙</div>
+			</div>
+			
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!--JavaScript at end of body for optimized loading-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$( document ).ready(function(){
+				$(".sidenav").sidenav();
+			})	
+		</script>
+		<script src="main.js"></script>
+	</body>
 </html>
