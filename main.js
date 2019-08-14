@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // autoTyping Text
 var i = 0;
 // var txt = 'Imagine . Create . Iterate ';
-let A = ['Imagine . Create . Iterate ', 'Hello World ', 'this is javascript '];
+let A = ['IET-DAVV ', 'STUDENT ACM CHAPTER '];
 let j = 0;
 //let txt = A[j];
 var speed = 120;
@@ -44,3 +44,32 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+// Collapsible Footer
+document.getElementById("footerbuttondown").onclick = function () { shrink() };
+document.getElementById("footerbuttonup").onclick = function () { expand() };
+document.getElementById("footer").style.height = "300px";
+
+function shrink() {
+  if (document.getElementById("footer").style.height = "300px") {
+
+    document.getElementById("footer").style.height = "30px";
+    document.getElementById("footerbuttondown").style.visibility = "hidden";
+    document.getElementById("footerbuttonup").style.visibility = "visible";
+    document.getElementById("footercont").style.opacity = "0";
+    document.getElementById("footercont").style.visibility = "hidden";
+
+  }
+}
+function expand() {
+  if (document.getElementById("footer").style.height = "30px") {
+
+    document.getElementById("footer").style.height = "300px";
+    document.getElementById("footerbuttondown").style.visibility = "visible";
+    document.getElementById("footerbuttonup").style.visibility = "hidden";
+    document.getElementById("footercont").style.opacity = "1";
+    document.getElementById("footercont").style.visibility = "visible";
+
+  }
+}
+shrink();
