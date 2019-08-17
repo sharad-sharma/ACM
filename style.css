@@ -149,3 +149,7 @@ body {
   opacity: 1;
   transition: opacity 1s, visibility 2s, display 2s;
 }
+.change-my-font {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+}
