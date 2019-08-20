@@ -11,6 +11,11 @@ body {
   color: #fff;
   margin: 0;
 }
+.main_body{
+	background-image: url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847__340.jpg') no-repeat center center;
+
+	
+}
 
 .hero {
   background: url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca') no-repeat center center;
@@ -366,12 +371,183 @@ border:0px;
 }
 .copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
 .copyright a:hover{color:#ff3666;}
+.about_us_heads{
+	text-align: center;
+
+}
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:600,700');
+figure.snip0078 {
+    font-family: 'Oswald', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 350px;
+    max-height: 310px;
+    width: 100%;
+    text-align: center;
+}
+
+figure.snip0078 * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+}
+
+figure.snip0078 img {
+    opacity: 1;
+    max-width: 100%;
+    border: 10px solid #000000;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+figure.snip0078 figcaption {
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    position: absolute;
+    background: #000000;
+    padding: 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    box-shadow: 0 0px 10px -10px #000000;
+}
+
+figure.snip0078 figcaption h2,
+figure.snip0078 figcaption p {
+    margin: 0;
+    color: #ffffff;
+}
+
+figure.snip0078 figcaption h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+figure.snip0078 figcaption h2 span {
+    font-weight: 800;
+}
+
+figure.snip0078 figcaption p {
+    font-size: 0.9em;
+    font-weight: 500;
+    opacity: 0.65;
+}
+
+figure.snip0078 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.snip0078.blue figcaption {
+    background: #315e95;
+}
+
+figure.snip0078.blue img {
+    border: 10px solid #315e95;
+}
+
+figure.snip0078.red figcaption {
+    background: #81261d;
+}
+
+figure.snip0078.red img {
+    border: 10px solid #81261d;
+}
+
+figure.snip0078.yellow figcaption {
+    background: #a85913;
+}
+
+figure.snip0078.yellow img {
+    border: 10px solid #a85913;
+}
+
+figure.snip0078:hover figcaption,
+figure.snip0078.hover figcaption {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 15px -15px #000000;
+}
+
+figure.snip0078:hover.blue img,
+figure.snip0078.hover.blue img {
+    border: 10px solid #2980b9;
+}
+
+figure.snip0078:hover.red img,
+figure.snip0078.hover.red img {
+    border: 10px solid #c0392b;
+}
+
+figure.snip0078:hover.yellow img,
+figure.snip0078.hover.yellow img {
+    border: 10px solid #e67e22;
+}
 
 
+.snip1374 {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 240px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+.snip1374 img {
+    max-width: 100%;
+    vertical-align: top;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.snip1374:hover img,
+.snip1374.hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.info-text{
+  top: 50%;
+}
+.info-text p {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    padding: 16% 4%;
+    vertical-align: middle;
+}
+.info-text .right {
+  float: right;
+}
 
 
-
-
+.contact-image {
+  height:170px;
+  width:100%;
+  background-size:cover;
+}
 
 //autoprefixer & reset used
 //Tested on Chrome, Firefox, IE11, and iOS.  The responsiveness & the social section is a bit off on IE11.  I'm looking to fix that.
@@ -855,4 +1031,133 @@ footer {
 
 #leftme {
   margin-right: 70%;
+
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.profile {
+  padding: 40px;
+  background: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 25px;
+}
+
+.profile__photo {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.profile__photo::before {
+  content: '';
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: #eb1768;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.profile:hover .profile__photo::before { 
+  height: 100%; 
+}
+
+.profile__photo::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #eb1768;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.profile__photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.profile:hover .profile__photo img {
+  box-shadow: 0 0 0 14px blue;
+  transform: scale(0.7);
+}
+
+.profile__content { 
+  margin-bottom: 30px; 
+}
+
+.content__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4e5052;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.content__subtitle {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform:capitalize;
+}
+
+.profile__social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #eb1768;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.profile:hover .profile__social { 
+  bottom: 0; 
+}
+
+.profile__social li { 
+  display: inline-block; 
+}
+
+.profile__social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.profile .profile__social li a:hover {
+  color: #eb1768;
+  background: blue;
+}
+
+@media only screen and (max-width: 990px) {
+  .profile { 
+    margin-bottom: 30px; 
+  }
+}  
