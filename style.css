@@ -1065,7 +1065,7 @@ body {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background: #eb1768;
+  background: #141d54;
   position: absolute;
   bottom: 135%;
   right: 0;
@@ -1084,7 +1084,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #eb1768;
+  background: #141d54;
   position: absolute;
   top: 0;
   left: 0;
@@ -1100,7 +1100,7 @@ body {
 }
 
 .profile:hover .profile__photo img {
-  box-shadow: 0 0 0 14px blue;
+  box-shadow: 0 0 0 14px #141d54;
   transform: scale(0.7);
 }
 
@@ -1127,7 +1127,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #eb1768;
+  background: #141d54;
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -1153,7 +1153,7 @@ body {
 
 .profile .profile__social li a:hover {
   color: #eb1768;
-  background: blue;
+  background: #141d54;
 }
 
 @media only screen and (max-width: 990px) {
@@ -1161,3 +1161,56 @@ body {
     margin-bottom: 30px; 
   }
 }  
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/*#nameH{
+  font-size: 60px;
+}*/
+
+#about{
+  background-color: #000;
+  height: 600px;
+  color: #ffffff;
+  border-radius: 5%;
+  Opacity: .8;
+}
+.responsive {
+
+  max-width: 200px;
+  height: auto;
+}
+
+
+@media screen and (min-width: 300px) {
+  div.text-c {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:200px) {
+  div.text-c {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  div.faculty-head-text {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 300px) {
+  div.faculty-head-text {
+    font-size: 20px;
+  }
+}
