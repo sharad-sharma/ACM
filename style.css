@@ -1195,16 +1195,21 @@ body {
   height: auto;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 800px) {
   div.text-c {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width:200px) {
+@media screen and (max-width:720px) {
   div.text-c {
-    font-size: 10px;
+        font-size: 20px;    
+    	text-align: center;
+    	margin-bottom:30px;
+    	margin-left: 20px;
+    	padding-left:70px;
   }
+ 
 }
 @media screen and (min-width: 600px) {
   div.faculty-head-text {
@@ -1216,10 +1221,20 @@ body {
   
   .HOD_paragraph{ display: none; }
 }
+@media screen and (max-width: 720px) {
+  
+  .style15{ display: none; }
+}
+@media screen and (max-width: 720px) {
+  
+  div.img-thumbnail{ 
+  	margin-right:200px;}
+}
+
 @media screen and (max-width: 600px){
 	div.CP{
 		font-size:18px;
-		
+	
 	}
 }
 @media screen and (max-width:600px){
@@ -1227,9 +1242,9 @@ div.CPprofile{
      font-size:13px;
 }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
 	.faculty-head-text{
-     font-size:18px;
+     font-size:25px;
 
  	}
 }
@@ -1453,3 +1468,8 @@ body {
   to {opacity:1 ;}
 }
 .pointer {cursor: pointer;}
+body{
+   background: black;
+   margin: 5px 5px 5px 5px;
+}
+
