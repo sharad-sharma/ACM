@@ -11,10 +11,13 @@ body {
   color: #fff;
   margin: 0;
 }
-.main_body{
-	background-image: url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847__340.jpg') no-repeat center center;
+#mybackground {
+  background-image: url('https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847__340.jpg');	
+  opacity: 0.8;
+}
 
-	
+#heightZero {
+  height: 0px;
 }
 
 .hero {
