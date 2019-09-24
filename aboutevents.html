@@ -31,6 +31,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>About Events </title>
     <style>
+    .navbar-fixed .container a:hover {
+  text-decoration: none;
+  color: white;
+}
         html, body {
   color: #555;
   font-family: 'Open Sans', sans-serif;
@@ -175,123 +179,6 @@ section {
 [id*="menu-"] li:last-child {
   border: 0;
 }
-#menu-left {
-  border-right: 1px solid #161616;
-  left: -205px;
-  -webkit-transform: translate3d(0,0,0);
-     -moz-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
-#menu-left .profile {
-  background: #222;
-  border-bottom: 5px solid #151515;
-  padding: 8px 5px;
-}
-#menu-left .profile  img {
-  border: 1px solid #111;
-  border-radius: 5px;
-  display: inline-block;
-  height: 32px;
-  vertical-align: middle;
-  width: 32px;
-}
-#menu-left .content {
-  position: relative;
-  height: initial;
-  width: 100%;
-}
-#menu-left .content  h5 {
-  background: #353535;
-  color: #CCC;
-  font-weight: 400;
-}
-#menu-left .content .fa {
-  padding: 0 8px 0 4px;
-}
-#menu-left .content ul:last-child {
-  color: #656565;
-}
-#menu-left .content ul:last-child .fa {
-  color: #151515;
-}
-#menu-right li  img  {
-  border: 1px solid #111;
-  border-radius: 5px;
-  display: inline-block;
-  height: 32px;
-  vertical-align: middle;
-  width: 32px;
-}
-#menu-left .profile span, #menu-right li span {
-  *font-weight: bold;
-  padding-left: 8px;
-}
-#menu-right li span {
-  font-size: 12px;
-}
-#menu-right li span:before {
-  background: transparent;
-  border: 1px solid #000;
-  border-radius: 100%;
-  box-shadow: inset 0 2px 5px #FFF;
-  content: "";
-  margin-top: -4px;
-  padding: 6px;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-}
-#menu-right li span.active:before {
-  background: #00CC0B;
-}
-#menu-right li span.so-active:before {
-  background: #FF5B06;
-}
-#menu-right li span.no-active:before {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-#menu-right {
-  border-left: 1px solid #161616;
-  top: 57px;
-  right: 0;
-  width: 205px;
-  -webkit-transform: translate3d(205px,0,0);
-     -moz-transform: translate3d(205px,0,0);
-          transform: translate3d(205px,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
-#menu-right.active {
-  right: 0;
-  -webkit-transform: translate3d(0,0,0);
-     -moz-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
-section.active, header.active, .intro.active, #menu-left.active, footer.active {
-  -webkit-transform: translate3d(205px,0,0);
-     -moz-transform: translate3d(205px,0,0);
-          transform: translate3d(205px,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
-#footer.active {
-  -webkit-transform: translate3d(205px,0,0);
-     -moz-transform: translate3d(205px,0,0);
-          transform: translate3d(205px,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
 section, article {
   background: inherit;
   overflow: hidden;
@@ -334,7 +221,7 @@ article .box:before {
   width: initial;
 }
 .box .feed h2 {
-  color: white;
+  color: black;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -343,68 +230,7 @@ article .box:before {
   letter-spacing: 1px;
   line-height: 22px;
 }
-footer {
-  background: inherit;
-  position: relative;
-  text-align: center;
-  z-index: 2;
-  -webkit-transform: translate3d(0,0,0);
-     -moz-transform: translate3d(,0,0);
-          transform: translate3d(0,0,0);
-  -webkit-transition: all 500ms ease-in-out;
-     -moz-transition: all 500ms ease-in-out;
-          transition: all 500ms ease-in-out;
-}
-footer h2 {
-  margin: 60px 10px 20px;
-}
-footer p {
-  color: #656565;
-  margin: 10px auto 50px;
-  text-align: center;
-  max-width: 500px;
-}
-footer .footer, .footer-02 {
-  height: 100%;
-  padding: 40px 10px 20px;
-}
-footer .footer {background: #111;}
-footer .footer-02 {background: #000;}
-footer .container {
-  background: #050505;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
 
-
-/*-------------------------------*/
-/* CSS @media screen responsive
-/*-------------------------------*/
-
-@media only screen and (min-width: 240px) {
-  article .box .feed p {font-size: 13px;}
-}
-@media only screen and (min-width: 320px) {
-  article .box .feed p {font-size: 13px;}
-}
-@media only screen and (min-width: 480px) {  
-  article .box .feed p {font-size: 14px;}
-}
-@media only screen and (min-width: 528px) {
-  article .box, footer .box {
-    display: inline-block;
-    margin: 0 -2px;
-    vertical-align: middle;
-    width: 50%;
-  }
-  article .box .feed p {
-    font-size: 11px;
-    line-height: 16px;
-  }
-  footer .box {height: 100%;}
-}
 @media only screen and (min-width: 640px) {
   article .box {
     display: inline-block;
@@ -477,28 +303,103 @@ footer .container {
   section {margin-top: 57px}
   article .box .feed p {font-size: 12px;}
 }
+.sidenav a {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left;
+}
+#centerme {
+  margin: 0 auto;
+}
+.smallsize {
+  width: 115px;
+  opacity: 0.8;
+}
+
     </style>
 
     </head>
     <body>
      
-<h1 style="text-align: center;"><b>Event Name</b></h1>
 <section>
   
  
 <article>
   <div class="box">
-    <div class="feed"><h2>Pretty Girls Photography</h2>
-    <p>If you only knew that I exist to love the rest of life left me in this very ostil place for my love and so pleasing to my eyes, the altarpiece of my most beautiful and even mysterious serious story.</p>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper #303f9f indigo darken-2">
+        <div class="container" style="font-size: 5px;">
+          <ul class="left hide-on-med-and-down" >
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="#aboutt_us"><b>About Us</b></a></li>
+            <li><a href="#CONTACT"><b>Contact Us</b></a></li>
+          
+          </ul>
+          <a href="#" class="center brand-logo"><img class="smallsize" src="https://www.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta" /></a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+          
+            <li><a href="#About_EVENTS"><b>Our Events</b></a></li>
+            <li><a href="#team_ACM"><b>Board</b></a></li>
+            <li><a href="notification.html" target="_blank"><b>Notifications</b></a></li>
+             <li><a href="#membershipp"><b></b></a></li>  
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--laptop-view navbar ending-->
+    <!--mobile view navbar starting-->
+    <ul id="mobile-links" class="sidenav #bbdefb blue lighten-4">
+      <li>
+        <div class="user-view">
+          <div class="col s2">
+            <a href="https://www.acm.org"><img class="circle responsive-img" id="centerme" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/220px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png" ></a>
+          </div>
+      </div>
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#aboutt_us">About Us</a></li>
+      <li><a href="#CONTACT">Contact Us</a></li>
+      <li><a href="#About_EVENTS">Our Events</a></li>
+      <li><a href="#team_ACM">Board</a></li>
+      <li><a href="#membershipp">About Membership</a></li>
+      <li><a href="notification.html" target="_blank">Notifications</a></li>
+      
+    </ul>
+    <!--navbar mobile view ended-->
+    <!--main body starts-->
+    
+    <h3 style="text-align: center;"><b>Event Name       <i class="fa fa-calendar-o" aria-hidden="true"></i></b></h3>
+    <hr style="border-top: 2px solid black;">
+<br><br><br><br><br> 
+    <div class="feed"><h2>Event 1</h2>
+    <p>If you only knew that I exist to love the rest of life left me in this very ostil place for my love and so pleasing to my eyes, the altarpiece of my most beautiful and even mysterious serious story.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</p>
     </div>
   </div>
   <div class="box"><img src="https://goo.gl/YgnW6p" alt="" /></div>
 </article>
-
+<hr style="border-top: 2px solid black;">
 <article>
   <div class="box">
-    <div class="feed"><h2>A Girl Motivated</h2>
-    <p>If you only knew that I exist to love the rest of life left me in this very ostil place for my love and so pleasing to my eyes, the altarpiece of my most beautiful and even mysterious serious story.</p>
+    <div class="feed"><h2>Event 2</h2>
+    <p>If you only knew that I exist to love the rest of life left me in this very ostil place for my love and so pleasing to my eyes, the altarpiece of my most beautiful and even mysterious serious story.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</p>
+    </div>
+  </div>
+  <div class="box"><img src="https://goo.gl/RYSgsX" alt="" /></div>
+</article>
+<hr style="border-top: 2px solid black;">
+<article>
+  <div class="box">
+    <div class="feed"><h2>Event 3</h2>
+    <p>If you only knew that I exist to love the rest of life left me in this very ostil place for my love and so pleasing to my eyes, the altarpiece of my most beautiful and even mysterious serious story.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</p>
     </div>
   </div>
   <div class="box"><img src="https://goo.gl/RYSgsX" alt="" /></div>
@@ -506,6 +407,10 @@ footer .container {
 
 
 </section>
+<!--footer starting-->
+
+
+
 
 <script>
     (function(){
@@ -521,4 +426,3 @@ footer .container {
 </script>
     </body>
 </html>
-
