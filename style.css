@@ -1497,3 +1497,23 @@ body {
   background: black;
   margin: 5px 5px 5px 5px;
 }
+@media only screen and (max-width: 480px) {
+	#deOnMob {
+		width: 100px;
+	}
+	#demo {
+		font-size: 35px;
+	}
+	#aboutt_us{
+		border: none;
+	}
+	#aboutt_us h2{
+		font-size: 3rem;
+	}
+	#aboutt_us p{
+		font-size: 20px;
+	}
+	#footer {
+		display: none;
+	}
+}
