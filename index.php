@@ -47,6 +47,24 @@ include_once 'connection.php';
 .container {
   padding: 2px 16px;
 }
+.modcard {
+    max-height: 250px;
+    font-size: 20px;
+    overflow-y: auto;
+    width: 400px;
+    margin-left:  110px;
+  }
+@media only screen and (max-width: 450px) {
+  #modcard {
+    width: 220px;
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  #modnotifs {
+    font-size: 15px;
+  }
+}
+
 
     </style>
     <title>acm website</title>
@@ -63,7 +81,7 @@ include_once 'connection.php';
 
           </ul>
           <a href="#" class="center brand-logo"><img class="smallsize" id="deOnMob"
-              src="https://www.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta" /></a>
+              src="img/logo.jpeg" style="height:70px;" /></a>
           <a href="#" class="sidenav-trigger" data-target="mobile-links">
             <i class="material-icons">menu</i>
           </a>
@@ -71,7 +89,7 @@ include_once 'connection.php';
 
             <li><a href="#About_EVENTS"><b>Our Events</b></a></li>
             <li><a href="#team_ACM"><b>Board</b></a></li>
-            <li><a href="notify/index.php"><b>Notifications</b></a>
+            <li><a href="#notification"><b>Notifications</b></a>
             </li>
             <li><a href="#membershipp"><b></b></a></li>
           </ul>
@@ -98,7 +116,7 @@ include_once 'connection.php';
       <li><a href="#About_EVENTS">Our Events</a></li>
       <li><a href="#team_ACM">Board</a></li>
       <li><a href="#membershipp">About Membership</a></li>
-      <li><a href="notifications.html">Notifications</a></li>
+      <li><a href="#notification" id="notification">Notifications</a></li>
       <li><a href="aboutteam.html">About Developers</a></li>
 
     </ul>
@@ -138,7 +156,7 @@ include_once 'connection.php';
           </a>
           <ul>
             <li><a class="btn-floating red"><i class="material-icons"
-                  href="notifications.html"><i
+                  href="#"><i
                     class="fa fa-bell"></i></i></a></li>
             <li><a class="btn-floating yellow darken-1" href="https://twitter.com/TheOfficialACM"><i
                   class="material-icons"><i class="fa fa-twitter"></i></i></a></li>
@@ -219,27 +237,28 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
                   
                   <h2><b>Events</b></h2>
             <figure class="snip1237" style="">
-              <div class="image" id="truck"> <img src="http://www.whitemarshtwp.org/ImageRepository/Document?documentID=1223" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
+              <div class="image" id="truck"> <img src="img/convoke.jpeg" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
                 </div>
               <figcaption>
-          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Event Name</h3><br> 
-          <a href="aboutevents.html" class="read-more" >About Event</a> 
+          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Convoke With Campus Stars</h3><br> 
+          <a href="https://www.facebook.com/search/top/?q=acm%20iet%20chapter&epa=SEARCH_BOX" class="read-more" >About Event</a> 
+
               </figcaption>
             </figure>
             <figure class="snip1237" >
-              <div class="image" id="truck"> <img src="http://www.whitemarshtwp.org/ImageRepository/Document?documentID=1223" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
+              <div class="image" id="truck"> <img src="img/essaycomp.jpeg" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
                 </div>
               <figcaption>
-          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Event Name</h3><br> 
-          <a href="aboutevents.html" class="read-more" >About Event</a> 
+          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Essay <br/>Competition</h3><br> 
+          <a href="https://www.facebook.com/search/top/?q=acm%20iet%20chapter&epa=SEARCH_BOX" class="read-more" >About Event</a> 
               </figcaption>
             </figure>
             <figure class="snip1237"style="">
               <div class="image" id="truck"> <img src="http://www.whitemarshtwp.org/ImageRepository/Document?documentID=1223" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
                 </div>
               <figcaption>
-          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Event Name</h3><br> 
-          <a href="aboutevents.html" class="read-more" >About Event</a> 
+          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Recruitments <br/><br/></h3><br> 
+          <a href="aboutevents.html" class="read-more" >About Events</a> 
               </figcaption>
             </figure> 
         </div>
@@ -298,16 +317,14 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
                       title="Wilfred's signature smile :P">
                     <br><br>
                     <p class="CP" style="margin-left:-90px;"><b>C . P . Patidar</b></p>
+                    <p class="CP" style="margin-left:-90px;">Assisstant Professor</p>
                   </div>
                   <br>
                   <div class="col-md-8 text-c" style="margin-top: -80px;">
                     <h5 class="HOD_paragraph">Message ~</h5>
                     <hr class="style15">
-                    <p align="justify" class="HOD_paragraph">Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                      1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged.
+                    <p align="justify" class="HOD_paragraph">On behalf of the entire ACM IET Family,  welcome to our website. We hope you recognize a virtual space that is emblematic of our active, engaged and vibrant family. 
+ACM, the world's largest educational and scientific computing society, delivers resources that advance computing as a science and a profession. ACM provides the computing field's premier Digital Library and serves its members and the computing profession with leading-edge publications, conferences, and career resources.ACM IET's motive is to help students cultivate intellectual curiosity and embrace a love of learning as they aspire to reach excellence.We work on the motto ASPIRE AND ASCEND, which clearly signifies that all the members in the team are enthusiastic enough to grow and reach heights.
                     </p>
 
                   </div>
@@ -643,18 +660,53 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
                     </li>
                   </ul>
                 </div>
+
               </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="profile">
+                  <div class="profile__photo">
+                    <img src="img\AdityaRajput.jpeg" alt="">
+                  </div>
+                  <div class="profile__content">
+                    <h3 class="content__title">Aditya Rajput</h3>
+                    <span class="content__subtitle">Public Relation Head</span>
+                  </div>
+
+                  <ul class="profile__social">
+                    <li>
+                      <a href="https://github.com/itsadityaraj">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/aditya-singh-rajput/">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/aditya_pratap03/">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              
 
               <!--about the team ends-->
             </div>
 
           </div>
           <!--Notifications-->
-          <div class="row" style="background-color: black;height:auto;width:100%;">
-              <div class="container" id="CONTACT">
-                <div class="row">
+          <div class="row" style="background-color: black;height:auto;width:100%;"  id="notification">
+              <div class="container"  id="notification" >
+                <div class="row"  id="notification">
                   <div class="col-sm text-center">
-                    <h3 class="div-heading display-4" style="color:white;"><b>Notifications</b>  <i class="fa fa-bell"></i> <span class="badge badge-danger" id="count"><!-- <?php echo $count; ?></span> --></h6></h3>
+                    <h2 class="div-heading display-4" id="modnotifs" style="color:white;"><b>Notifications</b>  <i class="fa fa-bell"></i> <span class="badge badge-danger" id="count"><!-- <?php echo $count; ?></span> --></h6></h2>
                   </div>
                 </div>
                 <?php
@@ -664,18 +716,19 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
 
 ?>
                 <div class="row">
-                  <div class="card" style="max-height:250px;font-size:20px;overflow-y:auto;"> 
+                  <div class="card modcard" id="modcard"> 
 
-  <div class="container">
+  <div class="container" style="color:black;text-align:left;">
      <?php
           $sql_get1= mysqli_query($con,"SELECT * FROM message where status=0");
           if(mysqli_num_rows($sql_get1)>0)
           {
             while($result= mysqli_fetch_assoc($sql_get1))
-            {
-              echo ' <a class="dropdown-item" href="read_msg.php?id='.$result['id'].'" font-weight="bold">'.$result['message'].'</a>';
+            { 
               echo '<br/>';
-              echo '<br/>';
+              echo ' <p class="dropdown-item" href="read_msg.php?id='.$result['id'].'" font-weight="bold">  <i class="fa fa-arrow-circle-right" size="2x"></i>    '.$result['message'].'</p>';
+              
+              
               
             }
 
@@ -739,17 +792,17 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
           <li>
             <h4 class="footer-list-header">About ACM</h4>
           </li>
-          <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">About
+          <li><a href="https://www.acm.org/about-acm" class="generic-anchor footer-list-anchor" itemprop="significantLink">About
               US</a></li>
-          <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">Volunteer</a>
+          <li><a href="https://www.acm.org/about-acm/get-involved" class="generic-anchor footer-list-anchor" itemprop="significantLink">Volunteer</a>
           </li>
-          <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor"
+          <li><a href="https://www.acm.org/membership/join" class="generic-anchor footer-list-anchor"
               itemprop="significantLink">Membership</a></li>
 
-          <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">Join
+          <li><a href="https://www.acm.org/membership/join" itemprop="significantLink" class="generic-anchor footer-list-anchor">Join
               ACM</a></li>
 
-          <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor"
+          <li><a href="https://www.acm.org/membership/membership-benefits" class="generic-anchor footer-list-anchor"
               itemprop="significantLink">Membership Benifits</a></li>
         </ul>
         <ul class="footer-list-top">
@@ -758,25 +811,25 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
           </li>
 
 
-          <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Chapter Admin</a></li>
-          <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">Calender</a></li>
-          <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">Publications</a></li>
-          <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor"></a></li>
-          <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">About
+          <li><a href="https://www.acm.org/chapters/chapter-administrative-interface" class="generic-anchor footer-list-anchor">Chapter Admin</a></li>
+          <li><a href="#">Calender</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor"></a></li>
+          <li><a href='#' class="generic-anchor footer-list-anchor" target="_blank">About
               Awards</a></li>
         </ul>
         <ul class="footer-list-top">
           <li id='help'>
             <h4 class="footer-list-header"> Any Help</h4>
           </li>
-          <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT
+          <li><a href='#' class="generic-anchor footer-list-anchor" itemprop="significantLink" id="CONTACT">CONTACT
               US</a></li>
-          <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
-          <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor"
+          
+          <li id='find-a-store'><a href='#' class="generic-anchor footer-list-anchor"
               itemprop="significantLink">Education</a></li>
-          <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor"
+          <li id='user-registration'><a href='#' class="generic-anchor footer-list-anchor"
               itemprop="significantLink">Media</a></li>
-          <li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink"
+          <li id='order-tracking'><a href='https://www.acm.org/code-of-ethics' itemprop="significantLink"
               class="generic-anchor footer-list-anchor">Code of ethics</a></li>
         </ul>
         <section class="footer-social-section flex-rw">
@@ -784,13 +837,13 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
             CONNECT <span class="footer-social-small">with</span> US
           </span>
           <span class="footer-social-overlap footer-social-icons-wrapper">
-            <a href="https://www.linkedin.com/company/association-for-computing-machinery/" class="generic-anchor"
+            <a href="#" class="generic-anchor"
               target="_blank" title="linkedin" itemprop="significantLink"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.facebook.com/ACMIET/" class="generic-anchor" target="_blank" title="Facebook"
               itemprop="significantLink"><i class="fa fa-facebook"></i></a>
             <a href="https://twitter.com/TheOfficialACM" class="generic-anchor" target="_blank" title="Twitter"
               itemprop="significantLink"><i class="fa fa-twitter"></i></a>
-            <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram"
+            <a href="https://www.instagram.com/acm_iet/" class="generic-anchor" target="_blank" title="Instagram"
               itemprop="significantLink"><i class="fa fa-instagram"></i></a>
             <a href="https://www.youtube.com/results?search_query=ACM" class="generic-anchor" target="_blank"
               title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
@@ -806,9 +859,12 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
               class="footer-bottom-rights"> - All Rights Reserved - </span>
           </div>
           <div class="footer-bottom-wrapper">
-            <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a
-              href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+            <i class="fa fa-copyright" role="copyright">
+
+            </i><address class="footer-address" role="company address"></address><span
+              class="footer-bottom-left"><a href="aboutteam.html" target="_blank"> About Developers</a> </span>
           </div>
+          
         </section>
       </footer>
     </div>
