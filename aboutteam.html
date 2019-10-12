@@ -1,412 +1,410 @@
 <!DOCTYPE.html>
-  <html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.8">
+<meta http-equiv="X-UA-Compatibile"  content="ie=edge">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.8">
-    <meta http-equiv="X-UA-Compatibile" content="ie=edge">
+<link rel="stylesheet"  href="css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="style.css" type="text/css"  rel="stylesheet">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Develepors</title>
-    <style>
-      /* Our Team
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>About Develepors</title>
+		<style>
+			
+/* Our Team
 -------------------------------------------------------*/
 
-      .our-team .team-row {
-        margin-left: -40px;
-        margin-right: -40px;
-      }
+.our-team .team-row {
+  margin-left: -40px;
+  margin-right: -40px;
+}
 
-      .our-team .team-wrap {
-        padding: 0 40px;
-      }
+.our-team .team-wrap {
+  padding: 0 40px;
+}
 
-      .our-team .container-fluid {
-        padding: 0 50px;
-      }
+.our-team .container-fluid {
+  padding: 0 50px;
+}
 
-      .team-img img {
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-        overflow: hidden;
-        width: 100%;
-      }
+.team-img img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
 
-      .team-member,
-      .team-img {
-        position: relative;
-        overflow: hidden;
-      }
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
 
-      .team-title {
-        margin: 30px 0 7px;
-      }
+.team-title {
+  margin: 30px 0 7px;
+}
 
-      .overlay {
-        background-color: rgba(20, 20, 20, .7);
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-      }
+.overlay {
+  background-color: rgba(20,20,20,.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
 
-      .team-details {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        padding: 5%;
-        overflow: hidden;
-        width: 100%;
-        z-index: 2;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-      }
+.team-details {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 5%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
 
-      .team-details p {
-        color: #fff;
-      }
+.team-details p {
+  color: #fff;
+}
 
-      .team-img:hover .team-details {
-        opacity: 1;
-        margin-top: -80px;
-      }
+.team-img:hover .team-details {
+  opacity: 1;
+  margin-top: -80px;
+}
 
-      .team-img:hover .overlay {
-        opacity: 1;
-      }
+.team-img:hover .overlay {
+  opacity: 1;
+}
 
-      .socials a {
-        display: inline-block;
-        width: 37px;
-        height: 37px;
-        background-color: transparent;
-      }
+.socials a {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
 
-      .socials i {
-        line-height: 37px;
-        color: #616161;
-        font-size: 14px;
-        width: 37px;
-        height: 37px;
-        border-radius: 50%;
-        text-align: center;
-        -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        -ms-transition: all 0.2s linear;
-        transition: all 0.2s linear;
-      }
+.socials i {
+  line-height: 37px;
+  color: #616161;
+  font-size: 14px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 
-      .team-details .socials i {
-        color: #fff;
-      }
+.team-details .socials i {
+	color: #fff;
+}
 
-      .socials a:hover i {
-        color: #fff;
-        background-color: #355c7d;
-      }
+.socials a:hover i {
+  color: #fff;
+  background-color: #355c7d;
+}
 
-      .footer {
-        background: linear-gradient(105deg, #6e99e6, #093c94);
-        padding-top: 80px;
-        padding-bottom: 40px;
-      }
+.footer {
+    background: linear-gradient(105deg,#6e99e6 ,#093c94);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer{}
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_footer ul li{}
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer ul li a:hover { color: #ff3666; }
 
-      /*END FOOTER SOCIAL DESIGN*/
-      .single_footer {}
-
-      @media only screen and (max-width:768px) {
-        .single_footer {
-          margin-bottom: 30px;
-        }
-      }
-
-      .single_footer h4 {
-        color: #fff;
-        margin-top: 0;
-        margin-bottom: 25px;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 20px;
-      }
-
-      .single_footer h4::after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 40px;
-        background: #fff;
-        margin-top: 20px;
-      }
-
-      .single_footer p {
-        color: #fff;
-      }
-
-      .single_footer ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .single_footer ul li {}
-
-      .single_footer ul li a {
-        color: #fff;
-        -webkit-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-        line-height: 36px;
-        font-size: 15px;
-        text-transform: capitalize;
-      }
-
-      .single_footer ul li a:hover {
-        color: #ff3666;
-      }
-
-      .single_footer_address {}
-
-      .single_footer_address ul {}
-
-      .single_footer_address ul li {
-        color: #fff;
-      }
-
-      .single_footer_address ul li span {
-        font-weight: 400;
-        color: #fff;
-        line-height: 28px;
-      }
+.single_footer_address{}
+.single_footer_address ul{}
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
 
 
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-
-      img {
-        vertical-align: middle;
-        border-style: none;
-      }
-
-      #cen {
-        margin-left: 45%;
-
-      }
-    </style>
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+		</style>
 
 
-  </head>
+</head>
+<body>
+	<div class="navbar-fixed">
+			<nav class="nav-wrapper #303f9f indigo darken-2">
+				<div class="container" style="font-size: 5px;">
+					<ul class="left hide-on-med-and-down" >
+						<li><a href="Index.php" target="_blank"><b>Home</b></a></li>
+						<li><a href="#"><b>About Us</b></a></li>
+						<li><a href="#"><b>Contact Us</b></a></li>
+					
+					</ul>
+					<a href="#" class="center brand-logo"><img class="smallsize" src="img/logo.jpeg" style="height:75px;" /></a>
+					<a href="#" class="sidenav-trigger" data-target="mobile-links">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul class="right hide-on-med-and-down">
+					
+						<li><a href="#"><b>Our Events</b></a></li>
+						<li><a href="#"><b>Board</b></a></li>
+						<li><a href="#"><b>Membership</b></a></li>  
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--laptop-view navbar ending-->
+		<!--mobile view navbar starting-->
+		<ul id="mobile-links" class="sidenav #bbdefb blue lighten-4">
+			<li>
+				<div class="user-view">
+					<div class="col s2">
+						<a href="#user"><img class="responsive-img" id="centerme" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/220px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png"></a>
+					</div>
+			</div>
+			</li>
+			<li><div class="divider"></div></li>
+			<li><a href="Index.php">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Membership</a></li>
+			<li><a href="#">Publications</a></li>
+			<li><a href="#">Special Interest Groups</a></li>
+			<li><a href="#">Conferences</a></li>
+			<li><a href="#">Chapter</a></li>
+			<li><a href="#">Awards</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Public Policy</a></li>
+			<li><a href="#">Governance</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		<div class="container-fluid">
+		<!--navbar mobile view ended-->
+	<img src="img\team.jpg" class="img-fluid" style="padding:0px 0px 0px 0px;">
+</div>
+  <div class="container">
 
-  <body>
-    <div class="navbar-fixed">
-      <nav class="nav-wrapper #303f9f indigo darken-2">
-        <div class="container" style="font-size: 5px;">
-          <ul class="left hide-on-med-and-down">
-            <li><a href="index.html"><b>Home</b></a></li>
-            <li><a href="#"><b>About Us</b></a></li>
-            <li><a href="#"><b>Contact Us</b></a></li>
-
-          </ul>
-          <a href="#" class="center brand-logo"><img class="smallsize"
-              src="https://www.acm.org/binaries/content/gallery/acm/ctas/acm-sym-branded.jpg/acm-sym-branded.jpg/acm%3Adesktopcta" /></a>
-          <a href="#" class="sidenav-trigger" data-target="mobile-links">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-
-            <li><a href="#"><b>Our Events</b></a></li>
-            <li><a href="#"><b>Board</b></a></li>
-            <li><a href="#"><b>Membership</b></a></li>
-          </ul>
-        </div>
-      </nav>
+  <div class="row heading">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center bottom-line">Developers <i class="fa fa-users"></i></h2>
+      
     </div>
-    <!--laptop-view navbar ending-->
-    <!--mobile view navbar starting-->
-    <ul id="mobile-links" class="sidenav #bbdefb blue lighten-4">
-      <li>
-        <div class="user-view">
-          <div class="col s2">
-            <a href="#user"><img class="responsive-img" id="centerme"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/220px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png"></a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Membership</a></li>
-      <li><a href="#">Publications</a></li>
-      <li><a href="#">Special Interest Groups</a></li>
-      <li><a href="#">Conferences</a></li>
-      <li><a href="#">Chapter</a></li>
-      <li><a href="#">Awards</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Public Policy</a></li>
-      <li><a href="#">Governance</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <div class="container-fluid">
-      <!--navbar mobile view ended-->
-      <img src="img\team.jpg" class="img-fluid" style="padding:0px 0px 0px 0px; margin-top: 70px">
-    </div>
-    <div class="container">
+  </div>
 
-      <div class="row heading">
-        <div class="col-md-6 col-md-offset-3">
-          <h2 class="text-center bottom-line">Developers <i class="fa fa-users"></i></h2>
+  <div class="row team-row">
 
-        </div>
-      </div>
+   
 
-      <div class="row team-row">
-
-
-
-        <div class="col-md-4 col-sm-6 team-wrap">
-          <div class="team-member text-center">
-            <div class="team-img">
-              <img src="img\PRAKHAR.jpeg" alt="">
-              <div class="overlay">
-                <div class="team-details text-center">
-                  <p>
-
-                  </p>
-                  <div class="socials mt-20">
-                    <a href="https://github.com/PrakharChelawat"><i class="fa fa-github"></i></a>
-                    <a href="https://twitter.com/chelwat?s=09"><i class="fa fa-twitter"></i></a>
-                    <a href="prakhar211299@gmail.com"><i class="fa fa-google-plus"></i></a>
-                    <a href="https://www.linkedin.com/in/prakhar-chelawat-2b909a187"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/invites/contact/?i=1ovv7yi9duk8t&utm_content=3jce9tls"><i
-                        class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img src="img\prakhar.jpeg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+               
+              </p>
+              <div class="socials mt-20">
+                <a href="https://github.com/PrakharChelawat"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/chelwat?s=09"><i class="fa fa-twitter"></i></a>
+                <a href="prakhar211299@gmail.com"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/in/prakhar-chelawat-2b909a187"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=1ovv7yi9duk8t&utm_content=3jce9tls"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
-            <h4 class="team-title">Prakhar Chelawat</h4>
-            <span></span>
           </div>
         </div>
-        <!-- end team member -->
-
-        <div class="col-md-4 col-sm-6 team-wrap">
-          <div class="team-member last text-center">
-            <div class="team-img">
-              <img src="img\sharad.jpeg" alt="">
-              <div class="overlay">
-                <div class="team-details text-center">
-                  <p>
-                  </p>
-                  <div class="socials mt-20">
-                    <a href="https://github.com/sharad-sharma"><i class="fa fa-github"></i></a>
-                    <a href="https://twitter.com/_sharad_sharma"><i class="fa fa-twitter"></i></a>
-                    <a href="sharadsharma8959@gmail.com"><i class="fa fa-google-plus"></i></a>
-                    <a href="https://www.linkedin.com/in/sharad-sharma-880863168/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/sharad_the_best/"><i class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="team-title">Sharad Sharma</h4>
-            <span></span>
-          </div>
-        </div>
-        <!-- end team member -->
-
-        <div class="col-md-4 col-sm-6 team-wrap">
-          <div class="team-member text-center">
-            <div class="team-img">
-              <img src="img\Vedang.jpeg" alt="">
-              <div class="overlay">
-                <div class="team-details text-center">
-                  <p>
-
-                  </p>
-                  <div class="socials mt-20">
-                    <a href="https://github.com/vedangj044"><i class="fa fa-github"></i></a>
-                    <a href="https://twitter.com/vedang16"><i class="fa fa-twitter"></i></a>
-                    <a href="vedangj044@gmail.com"><i class="fa fa-google-plus"></i></a>
-                    <a href="https://www.linkedin.com/in/vedang-j-783b6397"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://instagram.com/vedang.insta?igshid=1ldladvib57w3"><i
-                        class="fa fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4 class="team-title">Vedang Joshi</h4>
-            <span></span>
-          </div>
-        </div>
-        <!-- end team member -->
-
+        <h4 class="team-title">Prakhar Chelawat</h4>
+        <span></span>
       </div>
     </div>
-    <a id="cen" class="waves-effect waves-light btn btn-large modal-trigger hide-on-med-and-down" href="#modal1">All in
-      One</a>
+    <!-- end team member -->
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <img class="responsive-img" src="img\team.jpg">
+    <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member last text-center">
+        <div class="team-img">
+          <img src="img\sharad.jpeg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+                              </p>
+              <div class="socials mt-20">
+                <a href="https://github.com/sharad-sharma"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/_sharad_sharma"><i class="fa fa-twitter"></i></a>
+                <a href="sharadsharma8959@gmail.com"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/in/sharad-sharma-880863168/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sharad_the_best/"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="team-title">Sharad Sharma</h4>
+        <span></span>
       </div>
     </div>
+    <!-- end team member -->
+    
+     <div class="col-md-4 col-sm-6 team-wrap">
+      <div class="team-member text-center">
+        <div class="team-img">
+          <img src="img\vedang.jpeg" alt="">
+          <div class="overlay">
+            <div class="team-details text-center">
+              <p>
+                
+              </p>
+              <div class="socials mt-20">
+                <a href="https://github.com/vedangj044"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/vedang16"><i class="fa fa-twitter"></i></a>
+                <a href="vedangj044@gmail.com"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/in/vedang-j-783b6397"><i class="fa fa-linkedin"></i></a>
+                <a href="https://instagram.com/vedang.insta?igshid=1ldladvib57w3"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="team-title">Vedang Joshi</h4>
+        <span></span>
+      </div>
+    </div>
+    <!-- end team member -->
 
-  </body>
+  </div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <!--JavaScript at end of body for optimized loading-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".sidenav").sidenav();
-    })
+			<!--<div class="content">
 
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, options);
-    });
+		<footer class="flex-rw" style="z-index:0;">
+  
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">About ACM</h4></li>
+    <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">About US</a></li>
+    <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">Volunteer</a></li>
+    <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">Membership</a></li>
 
-    $(document).ready(function () {
-      $('.modal').modal();
-    });
+    <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">Join ACM</a></li>
 
-  </script>
+    <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">Membership Benifits</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">CHAPTERS</h4></li>
 
-  </html>
+
+    <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Chapter Admin</a></li>
+    <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">Calender</a></li>
+    <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">Publications</a></li>
+    <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor"></a></li>
+    <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">About Awards</a></li>
+  </ul>
+  <ul class="footer-list-top">
+    <li id='help'>
+      <h4 class="footer-list-header"> Any Help</h4></li>
+    <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT US</a></li>
+    <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+    <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">Education</a></li>
+    <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">Media</a></li>
+    <li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink" class="generic-anchor footer-list-anchor">Code of ethics</a></li>
+  </ul>
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="linkedin" itemprop="significantLink"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> ACM <address class="footer-address" role="company address">IET-DAVV,Indore</address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="/terms-of-use.html" class="generic-anchor" rel="nofollow">Terms</a> | <a href="/privacy-policy.html" class="generic-anchor" rel="nofollow">Privacy</a>
+      </div>
+  </section>
+</footer>
+</div>-->
+</body>
+</html>
