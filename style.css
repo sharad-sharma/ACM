@@ -2,11 +2,14 @@
 
 body {
   font-family: "Inter", sans-serif;
+
   letter-spacing: -1px;
   text-align: center;
   /*   background: #000; */
   background: #3949ab;
+
   font-size: 19px;
+
   height: 100vh;
   color: #fff;
   margin: 0;
@@ -24,6 +27,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 
 .hero {
   background: url("https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca")
@@ -57,17 +61,26 @@ body {
   background: #000;
   height: 2000px;
   display: flex;
+
   top: 100vh;
 }
 .sidenav a {
   font-family: "Nanum Gothic", sans-serif;
   text-align: left;
 }
+
+=======
+.sidenav li {
+  font-size: 15px;
+  font-weight: 600;
+}
+
 #centerme {
   margin: 0 auto;
 }
 .smallsize {
   width: 115px;
+
   opacity: 0.8;
 }
 body {
@@ -96,6 +109,14 @@ body {
 
   background-position: 10px;
   font-size: 200px;
+
+  /*   opacity: 0.8; */
+}
+.M {
+  background: url("http://i.giphy.com/l41lGRYy2zkAjnfhK.gif") repeat;
+  background-position: 10px;
+  font-size: 150px;
+
   font-family: Helvetica;
   font-weight: bold;
   -webkit-background-clip: text;
@@ -103,11 +124,15 @@ body {
   -webkit-text-fill-color: transparent;
   background-position-x: 52%;
   background-position-y: 48px;
+
+
   filter: grayscale(1);
 }
 
 .moveBox {
+
   margin: 50px auto;
+
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +193,27 @@ body {
   padding: 0;
   height: 100%;
 }
+=======
+  background: #026f96;
+  padding: 10px;
+  border-radius: 15px;
+  /*   border: 1px solid black; */
+}
+
+#demo {
+  padding: 10px;
+  text-align: center;
+  /*   border: 1px solid black; */
+  margin: 0 auto;
+  font-size: 45px;
+  height: 40px;
+}
+
+#leftme {
+  margin-right: 85%;
+}
+
+
 #footer {
   background-color: black;
   color: white;
@@ -190,6 +236,8 @@ body {
   top: -20px;
   border-radius: 5px;
   border-radius: 5px;
+
+
 }
 #footerbuttonup {
   background-color: black;
@@ -204,6 +252,8 @@ body {
   border-radius: 5px;
   border-radius: 5px;
   visibility: hidden;
+
+  cursor: pointer;
 }
 #footercont {
   position: absolute;
@@ -1516,4 +1566,9 @@ body {
 	#footer {
 		display: none;
 	}
+
+.change-my-font {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+
 }

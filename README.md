@@ -1,3 +1,8 @@
 # ACM
 ACM IET Chapter Website
-not deployed
+
+
+
+
+~This website is officially developed by IETians.
+
