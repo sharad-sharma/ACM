@@ -1,3 +1,7 @@
+<?php
+include_once 'connection.php';
+ ?>
+
 
 <!DOCTYPE.html>
   <html>
@@ -77,7 +81,7 @@
 
           </ul>
           <a href="#" class="center brand-logo"><img class="smallsize" id="deOnMob"
-              src="img/Screenshot_2019-11-15 (4) WhatsApp.png" style="height:60px;" /></a>
+              src="img/logo.jpeg" style="height:70px;" /></a>
           <a href="#" class="sidenav-trigger" data-target="mobile-links">
             <i class="material-icons">menu</i>
           </a>
@@ -112,7 +116,7 @@
       <li><a href="#About_EVENTS">Our Events</a></li>
       <li><a href="#team_ACM">Board</a></li>
       <li><a href="#membershipp">About Membership</a></li>
-      <li><a href="#notification">Notifications</a></li>
+      <li><a href="#notification" id="notification">Notifications</a></li>
       <li><a href="aboutteam.html">About Developers</a></li>
 
     </ul>
@@ -242,7 +246,7 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
               </figcaption>
             </figure>
             <figure class="snip1237" >
-              <div class="image" id="truck"> <img src="img/essay.jpeg" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
+              <div class="image" id="truck"> <img src="img/essaycomp.jpeg" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
                 </div>
               <figcaption>
           <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Essay <br/>Competition</h3><br> 
@@ -250,11 +254,11 @@ Our major objective is to come up with an ambiance for all to learn, discuss,  e
               </figcaption>
             </figure>
             <figure class="snip1237"style="">
-              <div class="image" id="truck"> <img src="img/hacktober.jpeg" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
+              <div class="image" id="truck"> <img src="http://www.whitemarshtwp.org/ImageRepository/Document?documentID=1223" alt="Touch-A-Truck" height="100%" width="100%"><em></em>
                 </div>
               <figcaption>
-          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Hacktober Fest <br/><br/></h3><br> 
-          <a href="https://www.facebook.com/search/top/?q=acm%20iet%20chapter&epa=SEARCH_BOX" class="read-more" >About Events</a> 
+          <h3 style="text-align:center;font-size: 20px;padding-top:5px;">Recruitments <br/><br/></h3><br> 
+          <a href="aboutevents.html" class="read-more" >About Events</a> 
               </figcaption>
             </figure> 
         </div>
@@ -661,7 +665,7 @@ ACM, the world's largest educational and scientific computing society, delivers 
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="profile">
                   <div class="profile__photo">
-                    <img src="img\aadityaraj.jpeg" alt="">
+                    <img src="img\AdityaRajput.jpeg" alt="">
                   </div>
                   <div class="profile__content">
                     <h3 class="content__title">Aditya Rajput</h3>
@@ -714,8 +718,8 @@ ACM, the world's largest educational and scientific computing society, delivers 
                 <div class="row">
                   <div class="card modcard" id="modcard"> 
 
-  <div class="container" style="color:black;text-align:left;" id="notification">
-<!--      <?php
+  <div class="container" style="color:black;text-align:left;">
+     <?php
           $sql_get1= mysqli_query($con,"SELECT * FROM message where status=0");
           if(mysqli_num_rows($sql_get1)>0)
           {
@@ -734,8 +738,8 @@ ACM, the world's largest educational and scientific computing society, delivers 
                 echo ' <a class="dropdown-item" href="#" font-weight="bold">No Notifications</a>';
           }
           ?>
-           -->
-       <a>No Notifications</a>
+          
+          
   </div>
 </div>
                   <!-- <div class="col-md-6">
@@ -1325,6 +1329,5 @@ $(".video-hero").videohero({
       }
     </script>
   </body>
-
 
   </html>
